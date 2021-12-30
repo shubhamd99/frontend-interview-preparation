@@ -24,6 +24,8 @@ console.log(getOneDigit(234235)); // 1
 function getOneDigit2(num) {
     if (num === 0) return 0;
 
+    // If a number n is divisible by 9, then the sum of its digit until sum becomes single digit is always 9.
+    // A number can be of the form 9x or 9x + k. For the first case, answer is always 9. For the second case, and is always k.
     return (num % 9 === 0) ? 9 : (num % 9) 
 }
 
