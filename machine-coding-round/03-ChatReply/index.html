@@ -8,7 +8,20 @@
     <title>Chat Reply</title>
 </head>
 <body>
-    
+    <h2>Nested Comments</h2>
+
+    <input id="main-input" type="text" />
+    <button id="main-button">COMMENT</button>
+    <ul id="comments">
+        <ul>
+            <li>comment</li>
+            <ul>
+                <li>comment2</li>
+            </ul>
+        </ul>
+        <ul><li>comment2</li></ul>
+        <ul><li>comment3</li></ul>
+    </ul>
     <script src="js/index.js"></script>
 </body>
 </html>

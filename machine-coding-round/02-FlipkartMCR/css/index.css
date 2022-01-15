@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-50 {
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    padding: 8px 40px 8px 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.input {
+    padding: 12px 20px 12px 20px;
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.circle_filled {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.circle_big {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle_inner {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: black;
+    cursor: pointer;
+}
+
+.space-right {
+    margin-right: 10px;
+}
+
+.space-bottom {
+    margin-bottom: 20px;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.space-right-span > span {
+    margin-right: 10px;
+}
+
+.desc-box {
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    color: white;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}

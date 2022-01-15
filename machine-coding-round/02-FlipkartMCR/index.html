@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" >
+    <title>Add Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-50">
+            <h2 class="space-bottom">Filter By</h2>
+            <div class="flex-row-center width-60">
+                <span id="pruple_circle" class="circle_big">
+                    <span class="circle_inner" style="background-color: purple;"></span>
+                </span>
+                <span id="aqua_circle">
+                    <span class="circle_inner" style="background-color: aquamarine;"></span>
+                </span>
+                <span id="red_circle">
+                    <span class="circle_inner" style="background-color: red;"></span>
+                </span>
+                <span id="blue_circle">
+                    <span class="circle_inner" style="background-color: blue;"></span>
+                </span>
+            </div>
+        </div>
+        <div class="flex-50">
+            <div class="flex-row space-bottom">
+                <span class="circle space-right"></span><span>AND</span>
+            </div>
+            <div class="flex-row space-bottom">
+                <span class="circle_filled space-right"></span><span>OR</span>
+            </div>
+            <button id="filter-btn" class="btn">Filter</button>
+        </div>
+        <div class="flex-50">
+            <input class="input" id="search-input" type="text" value="" placeholder="Title 1" >
+        </div>
+    </div>
+    <div class="container center">
+        <div>
+            <input id="title_input" class="input" style="border-radius: 0;" id="search-input" type="text" value="" placeholder="Title" >
+        </div>
+        <div>
+            <input id="description_input" class="input" style="border-radius: 0;" id="search-input" type="text" value="" placeholder="Description" >
+        </div>
+        <div class="flex-row-center space-right-span">
+            <span id="pruple_circle">
+                <span class="circle_inner" style="background-color: purple;"></span>
+            </span>
+            <span id="aqua_circle">
+                <span class="circle_inner" style="background-color: aquamarine;"></span>
+            </span>
+            <span id="red_circle">
+                <span class="circle_inner" style="background-color: red;"></span>
+            </span>
+            <span id="blue_circle" class="circle_big">
+                <span class="circle_inner" style="background-color: blue;"></span>
+            </span>
+        </div>
+        <div>
+            <button id="create-btn" class="btn" style="color: white; background-color: purple;">Create</button>
+        </div>
+    </div>
+    <div id="todo_list" class="container center">
+        <div class="desc-box" style="background-color: purple;">
+            <h4>Title 1</h4>
+            <p>Description</p>
+        </div>
+        <div class="desc-box" style="background-color: red;">
+            <h4>Title 1</h4>
+            <p>Description</p>
+        </div>
+        <div class="desc-box" style="background-color: purple;">
+            <h4>Title 1</h4>
+            <p>Description</p>
+        </div>
+        <div class="desc-box" style="background-color: blue;">
+            <h4>Title 1</h4>
+            <p>Description</p>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
