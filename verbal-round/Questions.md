@@ -90,3 +90,13 @@
 90. PropTypes in React
 91. Preference order in CSS
 92. Explain the entire process (what actually happens in the backend) starting from sending requests from client to server and then back to the client
+93. Client Side Rendering vs Server Side Rendering vs Static Site Generation
+94. Purpose of Package.lock json
+95. Mono Repo vs Multi Repo
+96. How ESlint works internally
+97. SSL Pinning and Auth
+98. Abstract Syntax Tree
+99. How to Reuse React Native in Web
+100. New Feature additions in React Native/React?
+101. How we will measure slowness in the Web/App?
+102. Forward Ref, Scroll to Index, paginated flatlist, extra data, onEndReach
