@@ -25,18 +25,19 @@ const flattenLinkedList = function(head) {
             currentNode = currentNode.next;
         } else {
             let tail = currentNode.child;
+            // Loop until we found tail of the child node
             while (tail.next !== null) {
                 tail = tail.next;
             }
 
-            tail.next = currentNode.next; //  pint child tail to current node next pointer
+            tail.next = currentNode.next; //  point child tail to current node next pointer
             if (tail.next !== null) {
-                tail.next.prev = tail;
+                tail.next.prev = tail; // point next pointer prev to tail
             }
 
-            currentNode.next = currentNode.child;
-            currentNode.next.prev = currentNode;
-            currentNode.child = null;
+            currentNode.next = currentNode.child; // set current next pointer to child
+            currentNode.next.prev = currentNode; // set current node's child prev to current node
+            currentNode.child = null; // reset child since it's merged
         }
         
     }
