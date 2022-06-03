@@ -15,7 +15,7 @@ const validParenthesis = function(s) {
         return true;
     }
 
-    const stack = [];
+    const stack = []; // LIFO - Last In First Out
 
     for (let idx = 0; idx < s.length; idx++) {
         if (parens[s[idx]]) {
