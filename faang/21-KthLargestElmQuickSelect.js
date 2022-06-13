@@ -3,8 +3,15 @@
 // Given an integer array nums and an integer k, return the kth largest element in the array.
 // Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
-// We have to sort the array first with quickSort, then with kth value for example if k = 2
-// [1,2,3,4,5,6] will traverse the array from backwards and the result will be 5
+// Hoare's Quick Select Algorithm
+
+// The algorithm is similar to QuickSort.
+// The difference is, instead of recurring for both sides
+// (after finding pivot), it recurs only for the part that contains the k-th smallest element
+// The logic is simple, if index of partitioned element is more than k, then we recur for left part
+// If index is same as k, we have found the k-th smallest element and we return
+// If index is less than k, then we recur for right part
+// This reduces the expected complexity from O(n log n) to O(n), with a worst case of O(n^2)
 
 /**
  * @param {number[]} nums
@@ -13,22 +20,28 @@
  */
 var findKthLargest = function(nums, k) {
     const indexToFind = nums.length - k;
-    quickSort(nums, 0, nums.length - 1); // Time - O(n logn), Space - O(n)
+    quickSelect(nums, 0, nums.length - 1, indexToFind);
     return nums[indexToFind];
 };
 
 /**
- * 
+ * Time - O(n)
+ * Space - O(n)
  * @param {number[]} array 
  * @param {number} left 
  * @param {number} right 
- * @returns {number[]}
  */
-function quickSort(array, left, right) {
+function quickSelect(array, left, right, idxToFind) {
     if (left < right) {
         const partitionIndex = partition(array, left, right);
-        quickSort(array, left, partitionIndex - 1);
-        quickSort(array, partitionIndex + 1, right);
+        // We eliminated half of the search space
+        if (partitionIndex === idxToFind) {
+            return array[partitionIndex];
+        } else if (idxToFind < partitionIndex) {
+            return quickSelect(array, left, partitionIndex - 1, idxToFind);
+        } else {
+            return quickSelect(array, partitionIndex + 1, right, idxToFind);
+        }
     }
 }
 
@@ -66,6 +79,7 @@ function swap(arr, i, j) {
     arr[i] = arr[j];
     arr[j] = temp;
 }
+
 
 console.log(findKthLargest([3,2,1,5,6,4], 2)); // 5
 console.log(findKthLargest([3,2,3,1,2,4,5,5,6], 4)); // 4
