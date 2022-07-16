@@ -100,3 +100,26 @@
 100. New Feature additions in React Native/React?
 101. How we will measure slowness in the Web/App?
 102. Forward Ref, Scroll to Index, paginated flatlist, extra data, onEndReach
+
+103. Monolithic vs Microservice architecture?
+Ans. https://www.techtarget.com/whatis/definition/monolithic-architecture
+
+104. Facade Structural Design Pattern?
+Ans. https://refactoring.guru/design-patterns/facade
+
+105. Creator of Javascript?
+Ans. JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. It took Eich only 10 days to develop the scripting language, then known as Mocha. Co-Founded the mozilla projects.
+
+106. ECMAScript?
+Ans. ECMAScript is a JavaScript standard meant to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International according to the document ECMA-262. Designed by Brendan Eich. 
+Interoperability - the ability of computer systems or software to exchange and make use of information.
+Example: Pendrive works on any USB environment because it follows certain pendrive specifications.
+
+107. Top ES6 Features?
+Ans. https://www.boardinfinity.com/blog/top-10-features-of-es6/
+
+108. ES6 to ES11 Features?
+Ans. https://gist.github.com/rajaramtt/7df3702a04c644b0b62c9a64f48f3dbf
+
+109. Submodules in Github?
+Ans. https://github.blog/2016-02-01-working-with-submodules/
